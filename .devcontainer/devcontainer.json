@@ -1,16 +1,14 @@
 {
-  "name": "SiYuan Note",
-  "image": "b3log/siyuan:latest",
+  "name": "SiYuan Dev",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
   "appPort": [6806],
   "forwardPorts": [6806],
-  "postCreateCommand": "echo 'SiYuan контейнер готовий 🚀'",
+  "postStartCommand": "/siyuan/siyuan --workspace /siyuan/workspace &",
   "customizations": {
     "vscode": {
-      "settings": {},
       "extensions": []
     }
-  },
-  "mounts": [
-    "source=siyuan_workspace,target=/siyuan/workspace,type=volume"
-  ]
+  }
 }
