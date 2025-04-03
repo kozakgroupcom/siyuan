@@ -1,0 +1,16 @@
+{
+  "name": "SiYuan Note",
+  "image": "b3log/siyuan:latest",
+  "appPort": [6806],
+  "forwardPorts": [6806],
+  "postCreateCommand": "echo 'SiYuan контейнер готовий 🚀'",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": []
+    }
+  },
+  "mounts": [
+    "source=siyuan_workspace,target=/siyuan/workspace,type=volume"
+  ]
+}
