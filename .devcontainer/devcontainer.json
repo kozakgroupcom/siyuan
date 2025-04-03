@@ -1,8 +1,7 @@
 {
-  "name": "Custom SiYuan Docs",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "name": "SiYuan Docs via Compose",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "siyuan",
   "appPort": [6806],
   "forwardPorts": [6806],
   "customizations": {
