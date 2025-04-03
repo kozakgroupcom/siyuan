@@ -1,11 +1,10 @@
 {
-  "name": "SiYuan Docs",
+  "name": "Custom SiYuan Docs",
   "build": {
     "dockerfile": "Dockerfile"
   },
   "appPort": [6806],
   "forwardPorts": [6806],
-  "postStartCommand": "/siyuan/siyuan --workspace /siyuan/workspace &",
   "customizations": {
     "vscode": {
       "extensions": []
