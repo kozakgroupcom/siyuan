@@ -1,7 +1,10 @@
 {
-  "name": "SiYuan Dev",
-  "build": {
-    "dockerfile": "../Dockerfile"
+  "name": "SiYuan Docs",
+  "image": "b3log/siyuan:latest",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/common-utils:2": {}
   },
   "appPort": [6806],
   "forwardPorts": [6806],
